@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback | Infinity Construction Co.</title>
+    <link rel="stylesheet" href="testimonial.css">
+    <!-- FontAwesome for Stars and Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVIGATION BAR -->
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+               
+                <img src="infinity.webp" alt="Infinity Construction Logo">
+                <span class="brand-name">Infinity <span class="highlight">Construction</span></span>
+            </a>
+            
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="aboutus.html" class="nav-link">About Us</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="testimonial.html" class="nav-link active">Feedback</a></li>
+                    <li><a href="inquiry.html" class="nav-link">Enquiry</a></li>
+                </ul>
+                <div class="nav-auth">
+                    <a href="login.html" class="btn-login">Log In</a>
+                    <a href="signup.html" class="btn-signup">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT BODY (FEEDBACK CARD) -->
+    <main class="content-wrapper">
+        <div class="feedback-container">
+            <!-- Left Side: Branding & Info -->
+            <div class="brand-side">
+                <div class="logo-area">
+                    <img src="infinity.webp" alt="Infinity Construction Co. Logo" class="logo">
+                    <h1>Infinity Construction</h1>
+                </div>
+                <div class="brand-content">
+                    <h2>Your Opinion Builds Our Future</h2>
+                    <p>At Infinity Construction, we pride ourselves on safety, quality, and solid foundations. Share your experience with our team so we can continue to elevate our standards.</p>
+                </div>
+                <div class="brand-footer">
+                    <p><i class="fas fa-phone"></i> +91-6969696969</p>
+                    <p><i class="fas fa-envelope"></i> feedback@infinityconstruction.com</p>
+                </div>
+            </div>
+
+            <!-- Right Side: Feedback Form -->
+            <div class="form-side">
+                <form id="feedbackForm" action="#" method="POST">
+                    <h2>Client Feedback Form</h2>
+                    <p class="subtitle">Please take a moment to rate our recent construction project.</p>
+
+                    <!-- Project Type -->
+                    <div class="input-group">
+                        <label for="project-type">Project Type</label>
+                        <select id="project-type" name="project-type" required>
+                            <option value="" disabled selected>Select your project type</option>
+                            <option value="residential">Residential Construction</option>
+                            <option value="commercial">Commercial Building</option>
+                            <option value="renovation">Renovation / Remodeling</option>
+                            <option value="infrastructure">Civil / Infrastructure</option>
+                        </select>
+                    </div>
+
+                    <!-- Personal Details Row -->
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" name="full-name" placeholder="Name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                        </div>
+                    </div>
+
+                    <!-- Star Rating System -->
+                    <div class="rating-group">
+                        <label>Overall Satisfaction</label>
+                        <div class="stars">
+                            <input type="radio" id="star5" name="rating" value="5" required><label for="star5" class="fas fa-star"></label>
+                            <input type="radio" id="star4" name="rating" value="4"><label for="star4" class="fas fa-star"></label>
+                            <input type="radio" id="star3" name="rating" value="3"><label for="star3" class="fas fa-star"></label>
+                            <input type="radio" id="star2" name="rating" value="2"><label for="star2" class="fas fa-star"></label>
+                            <input type="radio" id="star1" name="rating" value="1"><label for="star1" class="fas fa-star"></label>
+                        </div>
+                    </div>
+
+                    <!-- Review Message -->
+                    <div class="input-group">
+                        <label for="comments">Your Review & Comments</label>
+                        <textarea id="comments" name="comments" rows="5" placeholder="Tell us about the craftsmanship, timeliness, and professionalism of our crew..." required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn">Submit Feedback <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="infinity.webp" alt="Infinity Construction Logo">
+                    <span>Infinity <span class="highlight">Construction</span></span>
+                </div>
+                <p>Building sustainable infrastructures and dream spaces with integrity, safety, and modern precision.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Nav</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="testimonial.html">Feedback</a></li>
+                    <li><a href="inquiry.html">Enquiry</a></li>
+                    <li><a href="login.html">Client Portal</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-socials">
+                <h3>Follow Our Builds</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Infinity Construction Company. All Rights Reserved. Built with Safety & Quality.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

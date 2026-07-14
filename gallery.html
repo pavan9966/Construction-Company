@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Gallery for infinity constructions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+   <style>
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   body{
+    background: white;
+    color: #333;
+   }
+   header{
+                    background:rgba(0, 0, 0, 0.836);
+                    color:#fff;
+                    position:sticky;
+                    top:0;
+                    z-index:999;
+                    
+                }
+
+                .navbar{
+                    display:flex;
+                    justify-content:space-between;
+                    align-items:center;
+                    padding:15px 0;
+                    width:90%;
+                    max-width:1200px;
+                    margin:auto;
+                }
+
+                .logo{
+                    display: flex;
+                    font-size:22px;
+                    font-weight:bold;
+                    align-items: center;
+                }
+
+                .logo img{
+                    width:60px;
+                    height:60px;
+                }
+
+                
+
+                nav ul{
+                    display:flex;
+                    list-style:none;
+                }
+
+                nav ul li{
+                    margin-left:25px;
+                }
+
+                nav ul li a{
+                    color:white;
+                    text-decoration:none;
+                }
+   .hero{
+    height: 60vh;
+    background:url()center/cover ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .hero img {
+    width: 100%;
+    height: 100%;
+   }
+   .overlay{
+    background: rgba(0,0,0,.65);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+   }
+   .overlay h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+   }
+   .overlay p {
+    font-size: 20px;
+    max-width: 700px;
+   }
+   .heading{
+    padding: 60px 10%;
+    text-align: center;
+   }
+   .heading p {
+    font-size: 18px;
+    color: #666;
+   }
+   .heading h2{
+    font-size: 36px;
+    color: #0d4c7d;
+    margin-bottom: 15px;
+   }
+   .gallery {
+    padding: 20px 8% 70px;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap: 30px;
+   }
+   .card{
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+    transition: .4s;
+   }
+   .card:hover{
+    transform: translateY(-10px);
+   }
+   .card img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+   }
+   .content {
+    padding: 20px;
+   }
+   .content h3 {
+     color: #0d4c7d;
+   }
+   .content p{
+    color: #666;
+    margin-bottom: 10px;
+   }
+   .content span{
+    display: inline-block;
+    background: #0d4c7d;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 30px;
+    font-size: 14px;
+   }
+   .stats{
+    background: #0d4c7d;
+    padding: 70px 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+    text-align: center;
+    color: white;
+   }
+   .box i {
+    font-size: 45px;
+    margin-bottom: 20px;
+
+   }
+   .box h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+   }
+   .box p {
+    font-size: 18px;
+   }
+   footer{
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+   }
+   /* responsive */
+   @media(max-width:768px){
+    .overlay{
+        font-size: 35PX;
+    }
+    .overlay P{
+        font-size: 17px;
+    }
+    .overlay h2{
+        font-size: 30px;
+    }
+   }
+
+   </style>
+</head>
+<body>
+    <header>
+    <div class="navbar">
+                <div class="logo">
+                     <img src="logoin.webp" alt="logo">
+
+                     Infinity Constructions
+                </div>
+                
+                <nav id="navMenu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="testimonial.html">Testimonials</a></li>
+                        <li><a href="inquiry.html">Inquiry Us</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            </header>
+    <!--Hero -->
+    <section class="hero">
+        <img src="https://plus.unsplash.com/premium_photo-1682148826211-99809e7034eb">
+        <div class="overlay">
+            <h1>infinity Projects</h1>
+            <p>Building Landmarks with Quality, Innovation & Excellence</p>
+        </div>
+    </section>
+    <!--gallery heading-->
+    <section class="heading">
+        <h2>Our Project Gallery</h2>
+        <p>
+         Explore some of our successfully completed residentential, Commercial, industrial and infrastructure projects.   
+        </p>
+
+    </section>
+    <!--gallery-->
+<section class="gallery">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1580041065738-e72023775cdc">
+        <div class="content">
+    <h3>Luxury Apartment</h3>
+    <p>Vijayawada</p>
+    <span> Completed : 2022</span>
+
+        </div>
+   
+    </div>
+
+    <div class="card">
+        <img src="https://plus.unsplash.com/premium_photo-1682377521697-bc598b52b08a">
+        <div class="content">
+    <h3>Premium Villa Project</h3>
+    <p>Hyderabad</p>
+    <span> Completed : 2023</span>
+
+        </div>
+   
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1512915922686-57c11dde9b6b">
+        <div class="content">
+    <h3>Luxury Apartment</h3>
+    <p>Vijayawada</p>
+    <span> Completed in 2022</span>
+
+        </div>
+   
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1653278261390-fefc8f19c5d0">
+        <div class="content">
+    <h3>Commercial Complex</h3>
+    <p>Guntur</p>
+    <span> Completed : 2023</span>
+
+        </div>
+   
+    </div>
+
+    <div class="card">
+        <img src="https://plus.unsplash.com/premium_photo-1681426710520-7c56c9f563d2">
+        <div class="content">
+    <h3>industrial Warehouse</h3>
+    <p>Chennai</p>
+    <span> Completed : 2024</span>
+
+        </div>
+   
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1569758267239-d08deb78bb1a">
+        <div class="content">
+    <h3>Bridge Construction</h3>
+    <p>Hyderabad</p>
+    <span> Completed : 2025</span>
+
+        </div>
+   
+    </div>
+   
+</section>    
+
+<!--Project Statistics-->
+<section class="stats">
+<div class="box">
+<i class="fa-solid fa-building"></i>
+<h2>270+</h2>
+<p>Completed Projects</p>
+</div> 
+
+
+<div class="box">
+<i class="fa-solid fa-users"></i>
+<h2>190+</h2>
+<p>Happy Clients</p>
+</div>
+
+<div class="box">
+<i class="fa-solid fa-city"></i>
+<h2>10+</h2>
+<p>Years Experience</p>
+</div>
+
+<div class="box">
+<i class="fa-solid fa-award"></i>
+<h2>20+</h2>
+<p>Industry Awards</p>
+</div>
+
+</section>
+<!--footer-->
+<footer>
+    <p>
+        &copy;2026 Infinity Construction Private Limited. | All Rights Reserved.
+    </p>
+</footer>
+</body>
+</html>

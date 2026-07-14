@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            inquiry form
+        </title>
+        <style>
+
+            * {
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .header{
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #1a2b4c;
+                padding: 15px 40px;
+                position:sticky;
+                top:0;
+            }
+
+            .logo img {
+                width:60px;
+                height:60px;
+                object-fit: contain;
+            }
+
+            .logo h2 {
+            text-align: center;
+                margin-left: 80px;
+                color:white;
+                margin-top: -40px;
+                font-size: 20px;
+                
+            }
+
+            .nav a {
+                color:white;
+                text-decoration: none;
+                margin-left: 25px;
+                font-weight: 500;
+                font-size: 15px;
+                
+
+            }
+
+            .nav a:hover {
+                color:#ffb400;
+                border-bottom: 2px solid #ffb400 ;
+            }
+
+            .inquiry-section {
+                background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+                padding: 70px 20px;
+            }
+
+            .inquiry-box {
+                max-width: 1000px;
+                margin:auto;
+                display:flex;
+                gap:40px;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+
+            .inquiry-info {
+                flex:1;
+                min-width: 300px;
+                color:white;
+            }
+
+            .inquiry-info h2 {
+                font-size: 36px;
+                margin-bottom: 15px;
+                color:#ffb400;
+            }
+
+            .inquiry-info p {
+                font-size: 16px;
+                line-height: 1.7;
+                margin-bottom: 20px;
+            }
+
+            .inquiry-info ul {
+                list-style: none;
+            }
+
+            .inquiry-info ul li {
+                margin-bottom: 10px;
+                font-size: 15px;
+            }
+
+            .inquiry-form{
+                flex:1;
+                min-width: 320px;
+                background-color: white;
+                padding:35px;
+                border-radius: 10px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            }
+
+            .inquiry-form h3 {
+                text-align: center;
+                font-size: 24px;
+                color:#1a2b4c;
+                margin-bottom: 25px;
+            }
+
+            .form-group {
+                margin-bottom: 18px;
+            }
+
+            .inquiry-form input, .inquiry-form select, .inquiry-form textarea {
+                width:100%;
+                padding: 13px 15px;
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                font-size: 15px;
+                outline: none;
+            }
+
+            .inquiry-form input:focus, .inquiry-form textarea:focus, .inquiry-form select:focus {
+                border-color: #ffb400;
+            }
+
+            .inquiry-form button {
+                width:100%;
+                padding: 14px;
+                background-color: #ffb400;
+                color:#1a2b4c;
+                font-size: 17px;
+                font-weight: bold;
+                border:none;
+                border-radius: 6px;
+                cursor: pointer;
+
+            }
+
+            .inquiry-form button:hover {
+                background-color: #e09e00;
+            }
+
+            .popup {
+                display:none;
+                position:fixed;
+                top:0;
+                left:0;
+                width: 100%;
+                height:100%;
+                background-color: rgba(0,0,0,0.6);
+                justify-content: center;
+                align-items: center;
+            }
+
+            .popup-content {
+                background-color: white;
+                padding:30px;
+                border-radius: 12px;
+                text-align: center;
+                width:90%;
+                max-width: 400px;
+            }
+
+            .popup-content h2 {
+                color:#1a2b4c;
+                margin-bottom: 10px;
+            }
+
+            .popup-content p {
+                color:#555;
+                margin-bottom: 20px;
+            }
+
+            .popup-content button {
+                padding: 10px 25px;
+                background-color: #ffb400;
+                border:none;
+                border-radius: 6px;
+                cursor:pointer;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo">
+                <img src="construction.png">
+                <h2>INFINITY CONSTRUCTION</h2>
+            </div>
+                <div class="nav">
+            
+                <a href="index.html">HOME</a>
+                <a href="aboutus.html">ABOUT US</a>
+                <a href="services.html">SERVICES</a>
+                <a href="gallery.html">GALLERY</a>
+                 <a href="testimonial.html">TESTIMONIALS</a>
+                <a href="inquiry.html">INQUIRY</a>
+                <a href="login.html">LOGIN</a>
+                <a href="signup.html">SIGNUP</a>
+                </div>
+        </div>
+
+                <section class="inquiry-section">
+                    <div class="inquiry-box">
+
+                        <div class="inquiry-info">
+                            <h2>Build Your Dream With Us</h2>
+                            <p>We provide top quality residential and commercial construction services. Get a free consultation and quote today!</p>
+                            <ul>
+                                <li>Home construction and renovation</li>
+                                <li>Interior design services</li>
+                                <li>commercial projects</li>
+                                <li>On time delivery and quality worl</li>
+                            </ul>
+                        </div>
+
+                        <form class="inquiry-form" id="inquiryForm">
+                            <h3>Request a quote</h3>
+                            <div class="form-group">
+                                <input type="text" placeholder="Full Name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="number" placeholder="mobile number" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" placeholder="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <select name="service" required>
+                                    <option value="">Select Service</option>
+                                    <option value="New Home Construction">New Home Construction</option>
+                                    <option value="Interior Design">Interior Design</option>
+                                    <option value="Renovation">Renovation</option>
+                                    <option value="commercial building">Commercial Building</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" placeholder="project location">
+                            </div>
+
+                            <div class="form-group">
+                                <textarea rows="5" placeholder="Tell Us About Your Project"></textarea>
+                            </div>
+
+                            <button type="submit">Submit Inquiry</button>
+                        </form>
+
+                        <div class="popup" id="popup">
+                            <div class="popup-content">
+                                <h2>Thankyou</h2>
+                                <p>Your inquiry has been submitted successfully. Our team will contact you within 24 hours.</p>
+                                <button onclick="closePopup()">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <script>
+                    const form=document.getElementById('inquiryForm');
+                    const popup=document.getElementById('popup');
+
+                    form.addEventListener('submit', function(e) {
+                        e.preventDefault();
+                        popup.style.display= 'flex';
+                        form.reset();
+                    });
+
+                    function closePopup(){
+                        popup.style.display='none'
+                    }
+                    </script>
+             </body>
+</html>

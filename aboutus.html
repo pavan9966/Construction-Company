@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta  name="viewport" description="width=device-width initial-scale=1.0">
+        <title>Interior Design</title>
+     </head>
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial';
+        }
+
+        nav{
+            background: #1a2b4c;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 8%;
+            position: relative;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo{
+            gap: 10px;
+            align-items: center;
+            display: flex;
+            font-size: 22px;
+            font-weight: bold;
+            color: #f4b400;
+        }
+
+        .logo img{
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+        }
+
+        nav ul{
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        nav ul li a:hover{
+            color: #f4b400;
+             border: 5px solid white;
+            border-right: none;
+            border-left: none;
+            border-top: none;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .hero{
+            background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfNax4GjJ5l3XOeThC6JRXqmJztwhQMKtP-3fXbRtHPg&s);
+            height: 400px;
+            background-position: center;
+            background-size:cover ;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 10%;
+        }
+
+        .hero h1{
+            font-size: 47px;
+            margin-bottom: 15px;
+            color: #f4b400;
+        }
+
+        .hero p{
+            font-size: 18px;
+            max-width: 700px;
+        }
+
+        .about{
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .about h2{
+            font-size: 32px;
+            color: #1a2b4c;
+            margin-bottom: 20px;
+        }
+
+        .about p{
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+            max-width: 900px;
+            padding-left: 240px;
+        }
+
+        .projects{
+            padding: 60px 8%;
+            background-color: #f5f5ff;
+        }
+
+        .projects h2{
+            text-align: center;
+            font-size: 32px;
+            color: #1a2b4c;
+            margin-bottom: 40px;
+        }
+
+        .project-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+            gap: 30px;
+        }
+
+        .project-card{
+            background: white;
+            border-radius: 10px;
+            overflow:hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.8);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover{
+            transform: translateY(-5px);
+        }
+
+        .project-card img{
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+        }
+
+        .project-info{
+            padding: 18px;
+        }
+
+        .project-info h3{
+            color: #1a2b4c;
+            margin-bottom: 6px;
+        }
+
+        .project-info p{
+            font-size: 14px;
+            font-weight: 600;
+            color: #eb0410;
+            margin-bottom: 5px;
+        }
+
+        .project-info span{
+            font-weight: bold;
+            color: #0a0a0a;
+        }
+
+        .reviews-hero{
+            background: linear-gradient(135deg, #1a2b4c,#f4b400);
+            padding: 70px 8%;
+            text-align: center;
+            color: white;
+        }
+
+        .reviews-hero h2{
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .reviews-hero p{
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .reviews-card{
+            background: white;
+            color: #333;
+            padding: 18px;
+            border-radius: 10px;
+            margin: 30px;
+        }
+
+        .reviews-card:hover{
+            transform: translateY(-8px);
+        }
+
+        .reviews-card p{
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .reviews-card h4{
+            color: #1a2b4c;
+        }
+
+        footer{
+            background: #0f172a;
+            color: aliceblue;
+            text-align: center;
+            padding: 30px 8%;
+        }
+
+        footer p{
+            margin-top: 10px;
+        }
+
+        @media(max-width:768px){
+            nav ul{gap: 15px; font-size: 14px;}
+            .hero h1{font-size: 32px;}
+        }
+
+
+     </style>
+ <body>
+     <!--Navigation part-->
+     <nav>
+        <div class="logo">
+            <img src="image.png">
+            <span>Infinity Constructions</span>
+        </div>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutus.html">ABOUTUS</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="testimonial.html">TESTIMONIALS</a></li>
+            <li><a href="inquiry.html">INQUIRY</a></li> 
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="signup.html">SIGNUP</a></li>
+        </ul>
+     </nav>
+
+     <!--hero section-->
+     <scetion class="hero">
+        <h1>BUILDING DREAMS INTO REALITY</h1>
+        <P>With 15+ years of excellence, Infinity Contructions delivers world-class<br>
+         residential, commercial and industrial projects with trust, quality and precision.</P>
+     </scetion>
+
+     <!--About content-->
+     <section class="about">
+        <h2>ABOUT INFINITY CONTRUCTION</h2>
+        <p> Infinity is a leading construction company commited to building safe, sustainable<br>
+        and innovative structures. Our team of expert engineers and architects work together to<br>
+        turn your vision into landmark projects. We believe in quality workmanship, on-time delivery<br>
+       andclient satisfaction on every project we take. </p>
+     </section>
+
+     <!--projects with grid cards-->
+    <section class="projects">
+        <h2>OUR KEY PROJECTS</h2>
+        <div class="project-grid">
+
+            <div class="project-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROEEEeCtbTuAqAagFLV8YBpRZFhhiWOgVYVCoh0uGOBw&s=10">
+                <div class="project-info">
+                    <h3>Triplon Towers</h3>
+                    <p><span>Location:</span>Mumbai,Maharashtra</p>
+                    <p><span>Work:</span>10 Floor Residential complex with modern amenities.</p>
+                    <p><span>Engineers:</span>Er.Kunal Thakur, Er.Priya Mehta </p>
+                </div>
+            </div>
+
+             <div class="project-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZZr5FPE79luC-6O0cKNe0yyObjXHoepUEIeHIuB9ueg&s=10">
+                <div class="project-info">
+                    <h3>2 Shines Heights</h3>
+                    <p><span>Location:</span>Nagpur,Maharashtra</p>
+                    <p><span>Work:</span>Commercial IT Park with 10 Lakh sq.ft area</p>
+                    <p><span>Engineers:</span>Er.Ashish Katre, Er.Chaitanya Koli</p>
+                </div>
+            </div>
+
+             <div class="project-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUsMKNIax2P_HvEV5-yDyoEeCnFMuwdh95sIlmPV8DCw&s=10">
+                <div class="project-info">
+                    <h3>Silver Pearl Housing</h3>
+                    <p><span>Location:</span>Pune,Maharashtra</p>
+                    <p><span>Work:</span>300 Villa Township with landscaping.</p>
+                    <p><span>Engineers:</span>Er.Christian Grey, Er.Anastacia Steel</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Reviews-->
+    <section class="reviews-hero">
+        <h2>WHAT OUR CLIENTS SAY</h2>
+        <p>Trusted By 500+ clients acros India.</p>
+        <div class="reviews-grid">
+
+            <div class="reviews-card">
+                <p>"Infinity delivered our office project 1 month early. Quality is top notch!"</p>
+                <h4>-Mr.Singh, CEO TechOrnit</h4>
+            </div>
+
+             <div class="reviews-card">
+                <p>"Professional team and transparent process. Our dream home is perfect"</p>
+                <h4>-Mrs.Nagrale, Nagpur</h4>
+            </div>
+
+             <div class="reviews-card">
+                <p>"Best construction company in Mumbai. Engineers are very knowledgable."</p>
+                <h4>-Mr.Roy, Mumbai</h4>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <p>
+            &copy; 2026 Infinity Constructions. All Rights Reserved. <br>
+            <br>
+            Phone: +92 9876543210 | Email: info@infinity.com 
+        </p>
+    </footer>
+
+ </body>
